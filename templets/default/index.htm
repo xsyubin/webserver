@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="author" content="order by dede97.com" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="/skin/css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+{dede:include filename='head.htm'/}
+<!--banner start-->
+<div class="banner">
+  <div id="dowebok" class="fader">
+<img class="slide" src="/uploads/allimg/180413/1-1P413150I10-L.jpg" alt="幻灯三">
+<img class="slide" src="/uploads/allimg/180413/1-1P413150G60-L.jpg" alt="幻灯二">
+<img class="slide" src="/uploads/allimg/180413/1-1P413150F10-L.jpg" alt="幻灯一">
+
+    <div class="fader_controls">
+      <div class="page prev" data-target="prev">&lsaquo;</div>
+      <div class="page next" data-target="next">&rsaquo;</div>
+      <ul class="pager_list">
+      </ul>
+    </div>
+  </div>
+</div>
+<!--banner end--> 
+<div class="ind_jj">
+  <div class="wp">
+    <div class="ind_jj_l" data-scroll-reveal=" enter left and move 100px over 1.33s "> <img src="/uploads/180413/1-1P413152Aba.png"  alt="公司简介"/> </div>
+    <div class="ind_jj_r" data-scroll-reveal=" enter right and move 100px over 1.33s ">
+      <h3>ABOUT US<br/>
+        公司简介</h3>
+      <p>筋骨膏药铺第18代传人李大夫，重开筋骨膏药铺。李大夫根据祖传良方，制成百草健骨贴，搭配祖传药酒筋骨痛喷剂，祛风除湿，活血化瘀，通络定痛，一次见效。常大夫性格较真，所有细节都严格把控，好的药材有效成分才高，这样熬制的膏药才能达到最好效果。筋骨黑膏药用纯中药加香油熬制，不含任何激素，对皮肤温和，适合骨病患者长期贴敷，除尽病根。 ...</p>
+      <a href="/html/gywm/gsjj/">了解更多</a> </div>
+  </div>
+</div> 
+<div class="ind_pro">
+  <h2 class="bt" data-scroll-reveal=" enter bottom and move 100px over 1.33s ">产品展示</h2>
+  <h3 class="fbt" data-scroll-reveal=" enter bottom and move 100px over 1.33s "></h3>
+  <ul>
+{dede:arclist typeid=8 row=5}
+    <li data-scroll-reveal=" enter bottom and move 100px over 1.33s "> <a href="[field:arcurl/]">
+      <div class="imgbox"> <img src="[field:litpic/]" alt="[field:title/]"/> </div>
+      <p>[field:title/]</p>
+      <div class="hover"> <b></b>
+        <div class="txt"> <span>查看详情</span> </div>
+      </div>
+      </a> </li>
+{/dede:arclist}
+  </ul>
+  <div class="more" data-scroll-reveal="enter bottom and move 100px over 1.33s "> <a href="/html/cpzs/">查看更多</a> </div>
+</div> 
+<div class="ind_zsjm">
+  <h2 class="bt" data-scroll-reveal=" enter bottom and move 100px over 1.33s ">招商加盟</h2>
+  <h3 class="fbt" data-scroll-reveal=" enter bottom and move 100px over 1.33s "></h3>
+  <ul>
+    
+    <li  data-scroll-reveal=" enter bottom and move 100px over 1.33s "> <a href="/html/zsjm/gypjm/">
+      <div class="zsjm_img"><img src="/uploads/180413/1-1P413153431962.jpg"/></div>
+      <h2>膏药铺加盟</h2>
+      <p>膏药铺在总公司的领导下实行统一连锁加盟模式及类直营模式。总公司对加盟店、类直营店实行统一管理，所有店面享有膏药铺强大的品牌资源、丰富的管理经验，享受总公司统一的广告宣传和策略指导。...</p>
+      <div class="xaingqing">了解详情</div>
+      </a> </li>
+    
+    <li  data-scroll-reveal=" enter bottom and move 100px over 1.33s "> <a href="/html/zsjm/jgtjm/">
+      <div class="zsjm_img"><img src="/uploads/180413/1-1P413153603392.jpg"/></div>
+      <h2>健骨堂加盟</h2>
+      <p>健骨堂在总公司的领导下实行统一连锁加盟模式及类直营模式。总公司对加盟店、类直营店实行统一管理，所有店面享有健骨堂强大的品牌资源、丰富的管理经验，享受总公司统一的广告宣传和策略指导。...</p>
+      <div class="xaingqing">了解详情</div>
+      </a> </li>
+    
+  </ul>
+</div> 
+<div class="ind_xwdt">
+  <h2 class="bt" data-scroll-reveal=" enter bottom and move 100px over 1.33s ">新闻中心</h2>
+  <h3 class="fbt" data-scroll-reveal=" enter bottom and move 100px over 1.33s "></h3>
+  <div class="xwdt">
+    <ul>
+	{dede:arclist row=6 typeid=5 infolen=140}
+      <li class="xwdt1" data-scroll-reveal=" enter left and move 100px over 1.33s "><a href="[field:arcurl/]">
+        <div class="xwdt1_left">
+          <h4>[field:fulltitle/]</h4>
+          <p>[field:infos/]...</p>
+          <p class="xwdt1_left_clolr">MORE+</p>
+        </div>
+        <div class="xwdt1_right">
+          <p class="xwdt1_right_sj">[field:pubdate function=MyDate('d',@me)/]</p>
+          <p>[field:pubdate function=MyDate('Y-m',@me)/]</p>
+        </div>
+        </a> </li>
+{/dede:arclist}
+    </ul>
+  </div>
+</div> 
+{dede:include filename='footer.htm'/}
+</body>
+<script type="text/javascript" src="/skin/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/skin/js/jquery.easyfader.min.js"></script>
+<script type="text/javascript" src="/skin/js/scrollreveal.js"></script>
+<script type="text/javascript" src="/skin/js/mine.js"></script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>{dede:field.title/} / {dede:global.cfg_webname/}</title>
+<meta name="author" content="order by dede97.com" />
+<meta name="keywords" content="{dede:field.keywords function='dede97_keywords(@me)'/}" />
+<meta name="description" content="{dede:field.description function='dede97_description(@me)'/}" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="/skin/css/index.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+html, body {
+	margin: 0;
+	padding: 0;
+}
+.iw_poi_title {
+	color: #CC5522;
+	font-size: 14px;
+	font-weight: bold;
+	overflow: hidden;
+	padding-right: 13px;
+	white-space: nowrap
+}
+.iw_poi_content {
+	font: 12px arial, sans-serif;
+	overflow: visible;
+	padding-top: 4px;
+	white-space: -moz-pre-wrap;
+	word-wrap: break-word
+}
+</style>
+<script type="text/javascript" src="/skin/js/f72cbbfc5c194801944150003ba56c1c.js"></script>
+</head>
+<body>
+{dede:include filename='head.htm'/}
+<div class="xq_banner"><img src="/skin/img/banner16.png"/></div>
+<div class="position">
+  <ul>
+    <li class="position_img"><img src="/skin/img/xq_05.png"/></li>
+     <li>{dede:field.position/}</li>
+  </ul>
+</div>
+<div class="xw_list">
+  <ul class="xw_list_top">
+   {dede:channel type='son' currentstyle="<li class='cp_show_top_2'><a class='on' href='~typelink~'>~typename~</a></li>"}
+    <li class="cp_show_top_2 "><a href="[field:typeurl/]">[field:typename/]</a></li>
+  {/dede:channel}   
+  </ul>
+  <div class="qing"></div>
+</div>
+
+<div class="lx_wm" data-scroll-reveal=" enter bottom and move 100px over 1.33s ">
+  <form action="/plus/diy.php" enctype="multipart/form-data" method="post" name="form1" id="form1">
+    <input type="hidden" name="action" value="post" />
+    <input type="hidden" name="diyid" value="1" />
+    <input type="hidden" name="do" value="2" />
+    <ul class="lx_wm_tx">
+      <li>
+        <input type="text"   name="name" id="name"  placeholder="联系人*" />
+      </li>
+      <li class="lx_wm_z">
+        <input type="text"   name="tel" id="tel"  placeholder="联系电话*" />
+      </li>
+      <li class="lx_wm_y">
+        <input type="text"   name="email" id="email"  placeholder="邮箱" />
+      </li>
+    </ul>
+    <div>
+      <textarea  name="content"  placeholder="请输入留言内容..."></textarea>
+    </div>
+    <input type="hidden" name="dede_fields" value="name,text;tel,text;email,text;content,multitext" />
+    <input type="hidden" name="dede_fieldshash" value="fa29162a9ab8cac7a4e5900aed2c05fc" />
+    <div class="ly_tj">
+      <input  type="submit" name="submit" value="提交"  />
+    </div>
+  </form>
+  <ul class="lx_wm_xx" data-scroll-reveal=" enter left and move 100px over 1.33s ">
+    <li class="lx_wm_xx_img">&nbsp;</li>
+    <li class="lx_wm_xx_text">
+      <div style="text-align: center;">
+        <p>{dede:global.cfg_company/}</p>
+      </div>
+{dede:field.content/}
+</li>
+  </ul>
+  <script src="/skin/js/048c11927f4c4b8a8811578543381d58.js"></script>
+  <div class="baidu_ditu" id="dituContent" > 
+    <script>
+					var map2 = new BMap.Map("dituContent");            // 创建Map实例
+					var point2 = new BMap.Point(113.359516,23.131717); // 创建点坐标
+					map2.centerAndZoom(point2,15);                 // 初始化地图,设置中心点坐标和地图级别。
+					map2.enableScrollWheelZoom();                 //启用滚轮放大缩小
+					map2.addControl(new BMap.NavigationControl());
+					map2.addControl(new BMap.ScaleControl());
+					map2.addControl(new BMap.OverviewMapControl());
+					var marker2 = new BMap.Marker(point2);
+					map2.addOverlay(marker2);
+					var infoWinOpts = {}
+					var infoWin = new BMap.InfoWindow(
+							"<div style='text-align:left;color:#1A6DAF;font-size: 14px;'><p></p><p>联系人：经理</p><p>电　话：{dede:global.cfg_tel/}</p><p>邮　箱：admin@admin.com</p><p>地　址：{dede:global.cfg_address/}</p></div>",infoWinOpts);
+					//				marker2.openInfoWindow(infoWin);
+					marker2.addEventListener("click", function(){this.openInfoWindow(infoWin);});
+				</script> 
+  </div>
+</div>
+{dede:include filename='footer.htm'/}
+</body>
+<script type="text/javascript" src="/skin/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/skin/js/jquery.easyfader.min.js"></script>
+<script type="text/javascript" src="/skin/js/scrollreveal.js"></script>
+<script type="text/javascript" src="/skin/js/mine.js"></script>
+</html>

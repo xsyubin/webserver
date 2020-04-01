@@ -1,0 +1,48 @@
+程序代码已经过细致优化,非专业人员勿改,以免故障
+
+arc.archives.class.php
+文档类 上一篇 下一篇 , 分页: 上一页 下一页
+
+arc.archives.class_en.php
+英文 文档类 上一篇 下一篇 , 分页: 上一页 下一页
+
+arc.listview.class.php
+文档列表类 分页 上一页 下一页
+
+arc.listview.class.php
+去掉li 文档列表类 分页 上一页 下一页
+
+arc.listview.class_en.php
+英文 文档列表类 分页 上一页 下一页
+
+dedetag.class.php
+line759 function Display() 输出HTML
+line780 function SaveTo($filename) 保存HTML
+
+extend.func.php
+自定义函数
+
+common.inc.php
+入口
+
+common.func 核心公用函数
+common.func_old.php 核心兼容旧版模板
+
+arc.taglist.class.php
+line290 默认的arclist 参数 例如titlelen infolen 等等
+
+arc.searchview.class.php
+搜索解析 line584 默认的arclist 参数 例如titlelen infolen 等等
+
+dedetemplate.class.php
+模板引擎文件
+
+oxwindow.class.php
+提示窗口对话框类
+
+/taglib
+核心标签解析类
+
+dedetag.class.php
+模板标签解析核心类 line91
+

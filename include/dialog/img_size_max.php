@@ -1,0 +1,1 @@
+<?php $img_width_max=0;$img_height_max=0;

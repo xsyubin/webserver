@@ -1,0 +1,37 @@
+<div class="hd">
+  <div class="wp ove">
+    <div class="logo"> <a href="/"><img src="/skin/img/logo.png" alt="{dede:global.cfg_company/}"/> </a> </div>
+    <div class="nav">
+      <ul>
+        <li class="{dede:field.typeid function="IndexCurrent(@me,'sele')"/}"> <a href="/">网站首页</a> </li>
+	 {dede:channelartlist typeid='top' currentstyle='sele'}	
+        <li class="{dede:field.currentstyle/}"><a href="{dede:field.typeurl/}">{dede:field.typename/}</a>
+          <ol>
+          {dede:channel type="son"}
+          <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+          {/dede:channel}
+          </ol>
+        </li>
+{/dede:channelartlist}
+        <div class="clear"></div>
+      </ul>
+    </div>
+  </div>
+  <div id="m-hd"> <a href="/" class="m-logo"><img src="/skin/img/logo.png" alt="{dede:global.cfg_company/}"></a>
+    <div class="m-trigger"></div>
+    <ul class="m-nav">
+      <li> <a href="/">网站首页</a> </li>
+ {dede:channelartlist typeid='top'}
+      <li ><a href="{dede:field.typeurl/}">{dede:field.typename/}</a>
+          <ol>
+          {dede:channel type="son"}
+          <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+          {/dede:channel}
+          </ol>
+        </li>
+{/dede:channelartlist}
+      <div class="clear"></div>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>

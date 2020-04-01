@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>{dede:field.title/} / {dede:global.cfg_webname/}</title>
+<meta name="author" content="order by dede97.com" />
+<meta name="keywords" content="{dede:field.keywords function='dede97_keywords(@me)'/}" />
+<meta name="description" content="{dede:field.description function='dede97_description(@me)'/}" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="/skin/css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+{dede:include filename='head.htm'/}
+<div class="xq_banner"><img src="/skin/img/banner5.png"/></div>
+<div class="position">
+  <ul>
+    <li class="position_img"><img src="/skin/img/xq_05.png"/></li>
+ <li>{dede:field.position/}</li>
+ </ul>
+</div>
+<div class="xw_list">
+  <ul class="xw_list_top">
+  {dede:channel type='son' currentstyle="<li class='cp_show_top_2'><a class='on' href='~typelink~'>~typename~</a></li>"}
+    <li class="cp_show_top_2 "><a href="[field:typeurl/]">[field:typename/]</a></li>
+  {/dede:channel}
+    
+  </ul>
+  <div class="qing"></div>
+</div>
+
+<div class="pos_cont">
+  <div class="pos_cont_top">{dede:field.title/}</div>
+  <div class="pos_cont_top1">发布：{dede:field.writer/}&nbsp;&nbsp;&nbsp; 时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</div>
+{dede:field.body/}
+</div>
+{dede:include filename='footer.htm'/}
+</body>
+<script type="text/javascript" src="/skin/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/skin/js/jquery.easyfader.min.js"></script>
+<script type="text/javascript" src="/skin/js/scrollreveal.js"></script>
+<script type="text/javascript" src="/skin/js/mine.js"></script>
+</html>
